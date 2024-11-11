@@ -1,4 +1,3 @@
-# ftptester
 
 [![Android Release](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml/badge.svg)](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml)
 
@@ -30,7 +29,6 @@ Installation
 1. Clone the repository:
 
     git clone https://github.com/yourusername/ftp-tester.git
-
 2. Navigate to the project directory:
 
     cd ftp-tester
@@ -46,8 +44,6 @@ Installation
 Usage
 -----
 
-* Add FTP Servers: Click on the '+' button to add new FTP server URLs.
-* Manage URLs: Use the action buttons next to each URL to edit or delete them.
 * Toggle Dark Mode: Tap on the moon icon in the app bar to switch between light and dark modes.
 * Refresh List: Tap on the refresh icon in the floating action button to update the list of FTP servers.
 
