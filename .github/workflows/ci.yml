@@ -24,7 +24,7 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
       - name: Flutter Runner
-        run: flutter build apk --release --split-per-abi
+        run: flutter build apk --debug --split-per-abi
       - name: Push to Release
         uses: ncipollo/release-action@v1
         with:

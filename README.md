@@ -1,6 +1,7 @@
 # ftptester
 
-[![Android Release](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml/badge.svg)](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml)
+[![Android Release](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml/badge.svg)](https://github.com/Nafisarkar/FtpTesterBd/releases/tag/v1.0.0)
+A new Flutter project.
 
 FTP Tester
 ================
