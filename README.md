@@ -1,5 +1,6 @@
 # ftptester
 
+[![Android Release](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml/badge.svg)](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml)
 A new Flutter project.
 
 ## Getting Started
