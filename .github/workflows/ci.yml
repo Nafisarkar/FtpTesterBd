@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  flutter_build:
+    runs-on: android-12
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - run: flutter pub get
+      - run: flutter build apk
+      - uses: actions/upload-artifact@v2
+        with:
+          name: apk
+          path: build/app/outputs/apk/debug
+          retention-days: 1
