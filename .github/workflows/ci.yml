@@ -24,11 +24,11 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
       - name: Flutter Runner
-        run: flutter build apk --debug --split-per-abi
+        run: flutter build apk
       - name: Push to Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts : "build/app/outputs/apk/debug/*"
+          artifacts : "build/app/outputs/apk/flutter-apk/*"
           tag : "v1.0.0"
           token: ${{ secrets.TOKEN  }}
           name : "Release v1.0.0"
