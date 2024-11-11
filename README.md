@@ -1,7 +1,7 @@
 [![FTP Tester](https://i.ibb.co/42pG2QD/New-Project.jpg)](https://github.com/Nafisarkar/FtpTesterBd)
 
 
-[![Android Release](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml/badge.svg)](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml)
+[![Android Release](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml/badge.svg)](https://github.com/Nafisarkar/FtpTesterBd/releases/tag/v1.0.0)
 
 FTP Tester
 ================
@@ -11,7 +11,6 @@ FTP Tester is a Flutter-based application designed to test and manage FTP server
 Features
 --------
 
-* URL Management: Easily add, remove, and edit FTP server URLs.
 * Dark Mode Support: Switch between light and dark themes for better visibility in different environments.
 * Real-Time Refresh: Manually refresh the list of FTP servers to get the latest status.
 * Responsive Design: Works seamlessly on both mobile and tablet devices.
@@ -30,8 +29,7 @@ Installation
 
 1. Clone the repository:
 
-    git clone https://github.com/yourusername/ftp-tester.git
-
+    git clone https://github.com/Nafisarkar/FtpTesterBd
 2. Navigate to the project directory:
 
     cd ftp-tester
@@ -47,8 +45,6 @@ Installation
 Usage
 -----
 
-* Add FTP Servers: Click on the '+' button to add new FTP server URLs.
-* Manage URLs: Use the action buttons next to each URL to edit or delete them.
 * Toggle Dark Mode: Tap on the moon icon in the app bar to switch between light and dark modes.
 * Refresh List: Tap on the refresh icon in the floating action button to update the list of FTP servers.
 
@@ -62,5 +58,5 @@ License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Developed with Flutter | &copy; 2023 FTP Tester Team
+Developed with Flutter | &copy; 2024 FTP Tester Bd
 Made with love by Shaon An Nafi &hearts;
