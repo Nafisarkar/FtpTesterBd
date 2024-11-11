@@ -1,17 +1,65 @@
 # ftptester
 
 [![Android Release](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml/badge.svg)](https://github.com/Nafisarkar/FtpTesterBd/actions/workflows/ci.yml)
-A new Flutter project.
 
-## Getting Started
+FTP Tester
+================
 
-This project is a starting point for a Flutter application.
+FTP Tester is a Flutter-based application designed to test and manage FTP servers. It provides a user-friendly interface to check the availability and accessibility of various FTP sites, making it an essential tool for developers, administrators, and anyone dealing with FTP services.
 
-A few resources to get you started if this is your first Flutter project:
+Features
+--------
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* URL Management: Easily add, remove, and edit FTP server URLs.
+* Dark Mode Support: Switch between light and dark themes for better visibility in different environments.
+* Real-Time Refresh: Manually refresh the list of FTP servers to get the latest status.
+* Responsive Design: Works seamlessly on both mobile and tablet devices.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Getting Started
+---------------
+
+Prerequisites
+-------------
+
+* Flutter SDK installed on your machine.
+* A basic understanding of Dart programming language.
+
+Installation
+------------
+
+1. Clone the repository:
+
+    git clone https://github.com/yourusername/ftp-tester.git
+
+2. Navigate to the project directory:
+
+    cd ftp-tester
+
+3. Install dependencies:
+
+    flutter pub get
+
+4. Run the application:
+
+    flutter run
+
+Usage
+-----
+
+* Add FTP Servers: Click on the '+' button to add new FTP server URLs.
+* Manage URLs: Use the action buttons next to each URL to edit or delete them.
+* Toggle Dark Mode: Tap on the moon icon in the app bar to switch between light and dark modes.
+* Refresh List: Tap on the refresh icon in the floating action button to update the list of FTP servers.
+
+Contributing
+------------
+
+Contributions are welcome! Feel free to submit issues or pull requests to improve the application.
+
+License
+-------
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Developed with Flutter | &copy; 2023 FTP Tester Team
+Made with love by Shaon An Nafi &hearts;
