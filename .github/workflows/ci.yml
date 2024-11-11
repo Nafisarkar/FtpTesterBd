@@ -1,63 +1,47 @@
-name: CI/CD
+name: Build and Re-seal Flutter APK
 
 on:
   push:
-    branches: [ "main" ]  # Changed from master to main as per GitHub's recommendation
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
   build:
-    name: Build Release
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - uses: actions/setup-java@v3
-        with:
-          distribution: 'zulu'
-          java-version: "21.x" 
-          cache: 'gradle' 
 
-      - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: "3.24.4"
-          channel: 'stable'
-          cache: true
-      
-      - name: Get dependencies
-        run: flutter pub get
-      
-      - name: Flutter Build
-        run: flutter build apk --release --split-per-abi
-      
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: android-release-apk
-          path: build/app/outputs/flutter-apk/*.apk
-
-  release:
-    name: Release APK
-    needs: build
-    runs-on: ubuntu-latest
     steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: android-release-apk
-      
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22'
-      
-      - name: Install Dependencies
-        run: npm install -g semantic-release-cli
-      
-      - name: Configure Semantic Release
-        run: npx semantic-release-cli setup
-      
-      - name: Publish Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub's built-in token for authentication
-        run: npx semantic-release
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        channel: 'stable'
+        cache: true
+
+
+    - name: Set up Java JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'adoptopenjdk'
+        java-version: '17'
+
+    - name: Cache Dart packages
+      uses: actions/cache@v3
+      with:
+        path: /home/runner/.pub-cache
+        key: ${{ runner.os }}-dart-${{ hashFiles('**/pubspec.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-dart-
+
+    - name: Get dependencies
+      run: flutter pub get
+
+    - name: Build APK
+      run: flutter build apk --release --split-per-abi
+
+    - name: Upload APKs as artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: flutter-apks
+        path: ./build/app/outputs/flutter-apk/
