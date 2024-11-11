@@ -28,7 +28,7 @@ Installation
 
 1. Clone the repository:
 
-    git clone https://github.com/yourusername/ftp-tester.git
+    git clone https://github.com/Nafisarkar/FtpTesterBd
 2. Navigate to the project directory:
 
     cd ftp-tester
