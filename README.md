@@ -9,7 +9,6 @@ FTP Tester is a Flutter-based application designed to test and manage FTP server
 Features
 --------
 
-* URL Management: Easily add, remove, and edit FTP server URLs.
 * Dark Mode Support: Switch between light and dark themes for better visibility in different environments.
 * Real-Time Refresh: Manually refresh the list of FTP servers to get the latest status.
 * Responsive Design: Works seamlessly on both mobile and tablet devices.
