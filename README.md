@@ -56,5 +56,5 @@ License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Developed with Flutter | &copy; 2023 FTP Tester Team
+Developed with Flutter | &copy; 2024 FTP Tester Bd
 Made with love by Shaon An Nafi &hearts;
