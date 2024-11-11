@@ -23,3 +23,7 @@ jobs:
         run: flutter pub get
       - name: Start release build
         run: flutter build appbundle
+      - name: Flutter Runner
+        uses: jddeep/Flutter-Runner@1.2.0
+      - name: Flutter publish
+        uses: spydon/flutter-publish@v0
